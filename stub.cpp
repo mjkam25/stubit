@@ -14,6 +14,10 @@
 #include "encryption.h"
 #include "anti_analysis.h"
 #include <openssl/sha.h>  // For SHA256_DIGEST_LENGTH
+#define IsDebugged() false
+#define IsInsideVM() false
+#define IsSandboxed() false
+#define VerifyStubIntegrity() true
 
 class XorObfuscator {
 private:
